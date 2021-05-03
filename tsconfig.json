@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /**
+     * These are the recommended lib, module, and target for Node.js 14.x which is version we use.
+     *
+     * See here for more details https: //stackoverflow.com/a/61305579
+     *
+     * These values should be updated when we update what Node.js versions we use
+     */
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ES2020"],
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "target": "ES2020",
+
+    // These are custom settings for our project.
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "jsx": "react",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "strict": true
+  },
+
+  // This is only here for linting and will be overridden by the internal packages
+  "include": [
+    "packages/**/*.js",
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "jest-setup.js"
+  ]
+}

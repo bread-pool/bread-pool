@@ -1,0 +1,10 @@
+{
+  "name": "bread-pool-cdk",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "files": [],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist node_modules"
+  }
+}

@@ -1,0 +1,6 @@
+coverage
+dist
+node_modules
+
+# .lerna_backup files are generated during builds and ignoring tthem makes tthe build process smoother because Git/IDEs won't try and display these temporary files
+*.lerna_backup

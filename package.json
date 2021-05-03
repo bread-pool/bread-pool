@@ -1,0 +1,139 @@
+{
+  "name": "bread-pool",
+  "version": "1.0.0",
+  "description": "This repository contains all of the website and infrastructure that powers the Bread Pool.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bread-pool/bread-pool.git"
+  },
+  "license": "UNLICENSED",
+  "files": [],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "clean": "lerna run clean && rm -rf coverage node_modules",
+    "fix": "prettier --write \"packages/**/*.{js,ts,tsx}\" && eslint --fix \"packages/**/*.{js,ts,tsx}\"",
+    "lint": "eslint \"packages/**/*.{js,ts,tsx}\"",
+    "release": "npm ci && npm run bootstrap && npm run build && npm run test && npm run lint",
+    "start": "lerna run start",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.7.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^26.6.3",
+    "lerna": "^4.0.0",
+    "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "ts-jest": "^26.5.5",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testMatch": [
+      "<rootDir>/packages/*/test/**/*.test.{ts,tsx}"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/packages/*/src/**/*.{ts,tsx}",
+      "!<rootDir>/packages/*/src/types/*.ts",
+      "!<rootDir>/packages/*/src/**/*.d.ts"
+    ],
+    "coverageReporters": [
+      "text",
+      "cobertura",
+      "html"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "react-app",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/recommended-requiring-type-checking",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "project": "./tsconfig.json"
+    },
+    "ignorePatterns": [
+      "dist",
+      "node_modules"
+    ],
+    "plugins": [
+      "import"
+    ],
+    "rules": {
+      "import/order": [
+        "error",
+        {
+          "alphabetize": {
+            "order": "asc"
+          },
+          "groups": [
+            [
+              "builtin",
+              "external"
+            ],
+            [
+              "index",
+              "sibling",
+              "parent",
+              "internal"
+            ]
+          ],
+          "newlines-between": "always",
+          "pathGroups": [
+            {
+              "pattern": "react",
+              "group": "external",
+              "position": "before"
+            }
+          ],
+          "pathGroupsExcludedImportTypes": []
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.test.{ts,tsx}"
+        ],
+        "rules": {
+          "import/first": "off"
+        }
+      }
+    ]
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "jsxSingleQuote": true,
+    "printWidth": 140,
+    "singleQuote": true
+  }
+}
