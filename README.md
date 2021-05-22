@@ -6,7 +6,7 @@
 
 # About
 
-This is the development account for [Bread Pool](https://bread-pool.com): a high performance, mission driven Cardano stake pool (ticket BREAD) committed to helping run the network with enterprise-grade availability and security while also providing developer resources to those who need it.
+This is the development account for [Bread Pool](https://bread-pool.com): a high performance Cardano stake pool (ticket BREAD) committed to helping run the network with enterprise-grade availability and security while also providing developer resources to those who need it.
 
 # Ongoing Projects
 
