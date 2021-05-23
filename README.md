@@ -14,7 +14,7 @@ This is the development account for [Bread Pool](https://bread-pool.com): a high
 
 # Get in Touch!
 
-<p align="center">
+<div display="flex" align-items="center" justify-content="center">
   <a href="https://twitter.com/BreadStakePool">
     <img height="50px" src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/twitter.svg" alt="Twitter Logo" />
   </a>
@@ -24,10 +24,10 @@ This is the development account for [Bread Pool](https://bread-pool.com): a high
   </a>
 
   <a href="https://t.me/BreadStakePool">
-    <img height="50px" src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/telegram.svg" alt="Telegram Logo" />
+    <img height="34px" padding="8px" src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/telegram.svg" alt="Telegram Logo" />
   </a>
 
   <a href="https://discord.gg/qdcnVKYZFT">
     <img height="50px" src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/discord.svg" alt="Discord Logo" />
   </a>
-</p>
+</div>
