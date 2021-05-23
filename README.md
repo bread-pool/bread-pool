@@ -16,18 +16,18 @@ This is the development account for [Bread Pool](https://bread-pool.com): a high
 
 <p align="center">
   <a href="https://twitter.com/BreadStakePool">
-    <img src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/twitter.svg" alt="Twitter Logo" />
+    <img height="50px" src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/twitter.svg" alt="Twitter Logo" />
   </a>
 
   <a href="https://www.reddit.com/user/bread-pool">
-    <img src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/reddit.svg" alt="Reddit Logo" />
+    <img height="50px" src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/reddit.svg" alt="Reddit Logo" />
   </a>
 
   <a href="https://t.me/BreadStakePool">
-    <img src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/telegram.svg" alt="Telegram Logo" />
+    <img height="50px" src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/telegram.svg" alt="Telegram Logo" />
   </a>
 
   <a href="https://discord.gg/qdcnVKYZFT">
-    <img src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/discord.svg" alt="Discord Logo" />
+    <img height="50px" src="https://raw.githubusercontent.com/bread-pool/bread-pool/mainline/assets/external-logos/discord.svg" alt="Discord Logo" />
   </a>
 </p>
